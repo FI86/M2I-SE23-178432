@@ -39,7 +39,7 @@ def argsMultiple(*args):
     return resultat
 
 # Argument nommé obligatoire pour être modifier
-def uneFonctionSup(num = 1, x = 1, *, valide = True):
+def uneFonctionSup(num = 1, x = 1, *_, valide = True):
     # Test si valide est booléen
     if isinstance(valide, bool) == False:
         print("valide n'est pas un booléen !")
